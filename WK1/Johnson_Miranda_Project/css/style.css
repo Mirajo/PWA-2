@@ -14,7 +14,9 @@ body{
 	margin-left:auto;
 	margin-right: auto;
 }
-container {
+#container {
+	width:960px;
+	height: 0 auto;
 }
 
 header {
@@ -30,7 +32,7 @@ header {
 	color: #404031;
 	
 }
-logo {
+#logo {
 	clear: both;
 }
 nav {
@@ -46,6 +48,8 @@ nav ul li {
 }
 	
 .footer{
+	width:960px;
+	height: 0 auto;
 	background-color:#5C5D5F;
 	text-align: center;
 	
