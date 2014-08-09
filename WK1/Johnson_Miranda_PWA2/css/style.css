@@ -21,6 +21,17 @@ header {
 	
 	}
 
+#login ul li {
+	display: inline;
+	float:right;
+	background-color:#ffffff;
+	text-align:center;
+	color: #404031;
+	
+}
+logo {
+	clear: both;
+}
 nav {
 	background-color:#ffffff;
 	text-align:center;
