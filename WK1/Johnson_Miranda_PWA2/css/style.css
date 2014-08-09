@@ -13,6 +13,8 @@ body{
 	margin-left:auto;
 	margin-right: auto;
 }
+container {
+}
 
 header {
 	background-color:#5C5D5F;
@@ -21,10 +23,18 @@ header {
 
 nav {
 	background-color:#ffffff;
+	text-align:center;
+	color: #404031;
 	
 }	
+nav ul li {
+	display: inline;
+	padding:0.5em;
+	
+}
 	
 .footer{
 	background-color:#5C5D5F;
+	text-align: center;
 	
 }
