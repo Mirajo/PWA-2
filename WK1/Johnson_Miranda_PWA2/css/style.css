@@ -5,8 +5,9 @@
 */
 
 body{
+	background-image:url(images/pronizer-bg.png);
 	background-color:D5D6D8;
-	font-size: 14px
+	font-size: 14px;
 	height: auto;
 	margin-left:auto;
 	margin-right: auto;
