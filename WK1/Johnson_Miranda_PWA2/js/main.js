@@ -1,6 +1,7 @@
 /*  
-	Your Project Title
-	Author: You
+	Pronizer
+	Author: Miranda Johnson
+	PWAII
 */
 
 (function($){
