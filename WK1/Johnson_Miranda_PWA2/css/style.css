@@ -7,6 +7,7 @@
 body{
 	background-image:url('../images/pronizer-bg.png');
 	background-repeat:no-repeat;
+	background-position:center center;
 	background-color:D5D6D8;
 	font-size: 14px;
 	height: auto;
