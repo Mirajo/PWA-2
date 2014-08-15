@@ -22,5 +22,14 @@ $(document).ready(function(){
 	    $('.faq').each(function(){
 			$(this).append('<div class="letter_q"></div><div class="letter_a"></div>');
 			});
+			findAnchorLink();
 	
 	});
+	function findAnchorLink(){
+		if(location.href.indexOf('#') != -1){
+			var namedAnchor = window.location.hash;
+			var faqToFind = namedAnchor + ' .faq_question';
+			$(faqToFind).trigger('click');
+			}
+		
+		}
