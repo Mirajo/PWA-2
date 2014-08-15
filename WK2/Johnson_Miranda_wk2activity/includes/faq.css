@@ -67,3 +67,30 @@
 	margin: 0px;
 	padding: 0px;
 }
+p {
+	margin: 0px;
+}
+a {
+	color: #bf572c;
+}
+a:hover {
+	color: #000;
+}
+.faq .letter_q {
+	background-image: url(../images/q.png);
+	background-position: 0px 0px;
+	height: 50px;
+	width: 40px;
+	position: absolute;
+	left: 25px;
+	top: 20px;
+}
+.faq .letter_a {
+	background-image: url(../images/a.png);
+	background-position: 0px 0px;
+	height: 40px;
+	width: 43px;
+	position: absolute;
+	left: 23px;
+	top: 42px;
+}
