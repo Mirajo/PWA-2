@@ -16,7 +16,7 @@ $(document).ready(function(){
 				}
 		  });
 	    $('.faq').each(function(){
-			$(this).appended('<div class="letter_q"></div><div class="letter_a"></div>');
+			$(this).append('<div class="letter_q"></div><div class="letter_a"></div>');
 			});
 	
 	});
