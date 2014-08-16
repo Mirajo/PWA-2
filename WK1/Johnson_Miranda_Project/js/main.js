@@ -34,7 +34,7 @@
              .fadeIn();                                              //fade in the modal
     });
 
-    $('.close').on('click', function (event){                        //close modal on click
+    $('.close').on('click', function(event){                        //close modal on click
         event.preventDefault();                                      //prevent default page use modal
         $('#overlay')                                                //call out overlay
             .fadeOut()                                               //Fade out overlay
@@ -53,6 +53,23 @@
     $('.status').mouseout(function(){                                 //mouse over status icons
         $(this).fadeTo(100,1);                                        //fade icons during mouse over
      });
+
+    /*
+     ====================== TABBED ACCORDION NAVIGATION ====================
+     */
+    $('#tabs p').hide().eq(0).show();
+    $('#tabs p:not(:first)').hide();
+
+    $('tabs-nav .current').removeClass('current');
+      $(this).addClass('current');
+      var clickd = $(this).find('a:first').attr('href';
+
+    S('#tabs' + clicked).fadeIn('slow');
+     )eq(0).addClass('current');
+
+
+
+
 
 	// 	============================================
 	//	SETUP FOR INIT

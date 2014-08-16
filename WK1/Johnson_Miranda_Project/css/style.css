@@ -52,6 +52,25 @@ nav ul li {
 	maring-right:auto;
 	background-color:D5D6D8;
 }
+
+#tabs {
+    background-color: #CCC;
+    width: 500px;
+    height: 200px;
+    padding: 10px:
+}
+ #tabs-nav {
+     width: 500px;
+     height: 100px;
+     padding: 10px;
+     background-color: 999;
+     text-decoration: none;
+     list-style-type: none;
+
+ }
+ #tabs-nav li {
+     display: inline;
+ }
 	
 		
 .footer{
