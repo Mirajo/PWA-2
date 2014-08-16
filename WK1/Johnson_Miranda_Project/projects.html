@@ -90,16 +90,17 @@
     }
     input[type=radio] + img{
     cursor:pointer;
+    border: 2px solid transparent;
+    }
+    input[type=radio] :checked + img{
     border: 2px solid #FF0;
     }
     </style>
-	
-
 </head>
 
 <div id="container">
 <header>
-<div id="userid">
+<div id="userid">Welcome User:
 
   <button class="dashboard">Dashboard</button>
   <input name="logout" type="button" id="logout" value="Sign Out">
