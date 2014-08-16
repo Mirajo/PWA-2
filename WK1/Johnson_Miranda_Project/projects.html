@@ -9,7 +9,7 @@
 	Your code should load your page templates into the container
 -->
 
-<html lang="en"><!-- InstanceBegin template="../../../../FSU/PWAII/pronizer/Templates/Pronizer4.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en"><!-- InstanceBegin template="../../../../FSU/PWAII/pronizer/Templates/Pronizer-projects.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 
 	<meta charset="utf-8">
@@ -17,8 +17,8 @@
 	<!-- InstanceBeginEditable name="doctitle" -->
 	<title>Pronizer || Project Management Simplified</title>
 	<!-- InstanceEndEditable -->
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="description" content="Full Sail University PWAII Assignment">
+	<meta name="author" content="Miranda Johnson">
 	
 	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,42 +34,37 @@
 <div id="container">
 <header>
 <div id="login">
-        <ul>
-            <li><a href="/Admin.html">Admin</a></li>
-          </ul>
-    </div>
+
+  <button class="dashboard">Dashboard</button>
+  <input name="logout" type="button" id="logout" value="Sign Out">
+ 
+           
+</div>
     <div id="logo">
-      <a href="/index.html"><img src="images/pronizer-es.png"></a>
+      <a href="index.html"><img src="images/pronizer-es.png"></a>
     </div>
     
     <nav>
          <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/Register.html">Register</a></li>
-            <li><a href="/Admin.html">Admin</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Register.html">Register</a></li>
+            <li><a href="Admin.html">Admin</a></li>
           </ul>
     </nav>  
 </header>
+<div class="Welcome">
+<p><a href="#" class="modalClick">Add +</a></p>
+</div>
+
 <body>
 <!-- InstanceBeginEditable name="Body" -->
-<article class="one">
-  <p> Welcome to Pronizer. The industry standard for project management.75% of the industries project management professionals across the globe are already enjoying the benefits of Pronizer 
-    Sign up today and start enjoying the benefits of Pronizer today. </p>
-  <li>Rich Media Embeds (slideshows, pdf documents, audio) </li>
-  <li>Profiles</li>
-  <li>Project Assignment</li>
-  <li>Social Media Integration</li>
-  <li>Real Time Updates</li>
-  <li>Contact Management</li>
-  <li>Task Check-List</li>
-  <li>Android/IOS app</li>
-  <li>Task Assignment</li>
-  <li>Client Access</li>
-  <br>
-  <center>
-    <button type="register">Sign Up</button>
-  </center>
-</article>
+<div id="projectlist">
+<h1> Current Projects</h1>
+     <div class="projects">
+     </div>
+    </div> 
+
+
 <!-- InstanceEndEditable --><!-- jquery -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<!-- plugins -->
