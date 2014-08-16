@@ -49,41 +49,22 @@
             </ul>
         </nav>
     </header>
-    <div class="Welcome">
-        <p><a href="#" class="modalClick">Add +</a></p>
-    </div>
-
     <body>
 
-    <div id="projectList">
-        <h1> Current Projects</h1>
-        <div class="projects">
+    <div id="welcome">
+        <h1> Welcome</h1>
+        <p> This is the dashboard where you can manage your account !!</p>
         </div>
-    </div>
 
-    <div id="overlay">
-        <div id="modal">
-            <span class="close">X</span>
-            <h3 class="header"> Add Project</h3>
-            <div id="add">
-                <form id="addForm">
-                    <label>Project Name:</label>
-                    <input name="projectName" type="text" id="projectName"/>
-                    <br>
-                    <label> Project Description:</label>
-                    <input name="projectDescription" type="text" id="projectDescription"/>
-                    <br>
-                    <label for="status">Select status:</label>
-                    <br>
-                    <label class="status">
-                        <input type="radio" name="status" id="urgent">
-                        <img src=""></label>
-                    <label class="status">
-                        <input type="radio" name="status" id="delayed">
-                        <img src=""></label>
-                    <label class="status">
-                        <input type="radio" name="status" id="complete">
-                        <img src=""></label>
+    <br>
+
+    <div id="tabs">
+        <h3>Navigation</h3>
+        <ul id="tabs-nav">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="task">Task</a></li>
+        <li><a href="#users">Users</a></li>
+     </ul>
                     <br>
                     <input name="addButton" type="button" id="addButton" value="Add"/> </form>
             </div>
