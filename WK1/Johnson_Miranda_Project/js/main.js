@@ -22,8 +22,8 @@
     }).mousemove(function(e) {
         var mousex = e.pageX + 20;
         var mousey = e.pageY + 10;
-        $('tooltip')
-            .css({ top: mousey, left: mousex})
+        $('.tooltip')
+        .css({ top: mousey, left: mousex })
     });
 	/*
 	======================== APPLICATION FUNCTIONS =====================
