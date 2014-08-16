@@ -6,26 +6,25 @@
 
 body{
 	background-image:url('../images/pronizer-bg.png');
-	background-repeat:no-repeat;
-	background-position:center center;
-	background-color:D5D6D8;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #f1f2f4;
 	font-size: 14px;
 	padding:0;
 }
 	
 header {
-	background-color:#5C5D5F;
-	width:960px;
+	background-color: #5C5D5F;
+	width: 960px;
 	height: 0 auto;
-	margin-left:auto;
-	maring-right:auto;
-	
-	}
+	margin-left: auto;
+	margin-right: auto;
+}
 
 #login ul li {
 	display: inline;
-	float:right;
-	background-color:#ffffff;
+	float: right;
+	background-color: #ffffff;
 	text-align:center;
 	color: #404031;
 	
@@ -48,9 +47,9 @@ nav ul li {
 #container {
 	width:960px;
 	height: auto;
-	margin-left:auto;
-	maring-right:auto;
-	background-color: #D5D6D8;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ebebeb;
 }
 
 #tabs {
