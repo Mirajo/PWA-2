@@ -26,6 +26,79 @@
 	<!-- CSS concatenated and minified via ant build script-->
 	<link rel="stylesheet" href="css/style.css?v=1">
 	<!-- end CSS-->
+    <style>
+    #overlay {
+    width: 100%;
+    height: 100%
+    background: rgba(0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    }
+
+    #modal {
+    width: 350px;
+    background: #999;
+    box-shadow: 0 0 10px #333;
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    z-index: 1001;
+    display: none;
+
+    }
+    #modal .header {
+    background: #5C5D5F;
+    color: #fff;
+    padding: 10px;
+    }
+    #modal p {
+    margin: 15px;
+    }
+    #modal .close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background-color: #F00;
+    }
+    form {
+    padding: 10px;
+
+    }
+    form.input {
+    padding: 10px;
+
+    }
+    header {
+    width: 960px;
+    }
+    .userid {
+    width: 100px;
+    float: left;
+    }
+    .status > input[type=radio] {
+    display: none;
+
+    }
+    .logoutbox {
+    float: right;
+    }
+    input[type=radio] + img{
+    cursor:poiner;
+    border: 2px solid #FF0;
+    }
+    </style>
 	
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
@@ -58,12 +131,40 @@
 
 <body>
 <!-- InstanceBeginEditable name="Body" -->
-<div id="projectlist">
+<div id="projectList">
 <h1> Current Projects</h1>
      <div class="projects">
      </div>
     </div> 
-
+    
+<div id="overlay">
+   <div id="modal">
+      <span class="close">X</span>
+      <h3 class="header"> Add Project</h3>
+      <div id="add">
+      <form id="addForm">
+      <label>Project Name:</label>
+      <input name="projectName" type="text" id="projectName"/>
+      <br>
+      <label> Project Description:</label>
+      <input name="projectDescription" type="text" id="projectDescription"/>
+      <br>
+      <label for="status">Select status:</label>
+      <br>
+      <label class="status">
+      <input type="radio" name="status" id="urgent">
+      <img src=""></label>
+       <label class="status">
+      <input type="radio" name="status" id="delayed">
+      <img src=""></label>
+       <label class="status">
+      <input type="radio" name="status" id="complete">
+      <img src=""></label>
+      
+      <br>
+     <input name="addButton" type="button" id="addButton" value="Add"/> </form>
+   </div>
+      </div>
 
 <!-- InstanceEndEditable --><!-- jquery -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
