@@ -60,14 +60,18 @@
     $('#tabs p').hide().eq(0).show();
     $('#tabs p:not(:first)').hide();
 
-    $('tabs-nav .current').removeClass('current');
-      $(this).addClass('current');
-      var clickd = $(this).find('a:first').attr('href';
 
-    S('#tabs' + clicked).fadeIn('slow');
-     )eq(0).addClass('current');
+    $('#tabs-nav li').click(function(e) {
+        e.preventDefault();
+        $('#tabs p').hide();
 
 
+        $('#tabs-nav .current').removeClass('current');
+        $(this).addClass('current');
+        var clicked = $(this).find('a:first').attr('href');
+
+        $('#tabs ' + clicked).fadeIn('slow');
+    }).eq(0).addClass('current');
 
 
 
