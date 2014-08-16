@@ -69,7 +69,16 @@ nav ul li {
  #tabs-nav li {
      display: inline;
  }
-	
+.tooltip {
+    display: none;
+    position: absolute;
+    border: 1px solid #ebebeb;
+    background-color: #333333;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    font-size: 12px Arial;
+ }
 		
 .footer{
 	width:960px;
