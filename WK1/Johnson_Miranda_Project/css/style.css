@@ -50,20 +50,20 @@ nav ul li {
 	height: auto;
 	margin-left:auto;
 	maring-right:auto;
-	background-color:D5D6D8;
+	background-color: #D5D6D8;
 }
 
 #tabs {
     background-color: #CCC;
     width: 500px;
     height: 200px;
-    padding: 10px:
+    padding: 10px;
 }
  #tabs-nav {
      width: 500px;
      height: 100px;
      padding: 10px;
-     background-color: 999;
+     background-color: #999;
      text-decoration: none;
      list-style-type: none;
 
@@ -80,5 +80,4 @@ nav ul li {
 	maring-right:auto;
 	background-color:#5C5D5F;
 	text-align: center;
-	
 }
