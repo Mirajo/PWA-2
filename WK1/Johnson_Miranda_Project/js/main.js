@@ -64,7 +64,7 @@
     /*
      ====================== FADING STATUS OPTION =======================
      */
-    $('.status').mouseover(function(){                                //mover over status icons
+    $('.status').mouseover(function(){                                //move over status icons
         $(this).fadeTo(100,.3);                                       //fade icons during mouse over
      });
 
@@ -75,22 +75,32 @@
     /*
      ====================== TABBED ACCORDION NAVIGATION ====================
      */
-    $('#tabs p').hide().eq(0).show();
-    $('#tabs p:not(:first)').hide();
+    $('#tabs p').hide().eq(0).show();                                //hide every p
+    $('#tabs p:not(:first)').hide();                                 //first tab is visible the others are hidden
 
 
-    $('#tabs-nav li').click(function(e) {
-        e.preventDefault();
-        $('#tabs p').hide();
+    $('#tabs-nav li').click(function(e) {                            //call div tabs nav
+        e.preventDefault();                                          //prevent the default behavior
+        $('#tabs p').hide();                                         //hide the p in the tabs div
 
 
-        $('#tabs-nav .current').removeClass('current');
-        $(this).addClass('current');
-        var clicked = $(this).find('a:first').attr('href');
+        $('#tabs-nav .current').removeClass('current');              //show the current nav then remove class
+        $(this).addClass('current');                                 //add class to current
+        var clicked = $(this).find('a:first').attr('href');          //variable
 
-        $('#tabs ' + clicked).fadeIn('slow');
-    }).eq(0).addClass('current');
+        $('#tabs ' + clicked).fadeIn('slow');                        //fade in slow when clicked
+    }).eq(0).addClass('current');                                    //add class to current
 
+    /*
+     ====================== DISPLAY USERNAME ====================
+     */
+    $.getJSON("xhr/check_login.php", function(data){
+        console.log(data);
+        $.each(data, function(key, va){
+            console.log(val.first_name);
+            $(".userid").html("Welcome User: " + val.first_name);
+        })
+    })
 
 
 	// 	============================================
