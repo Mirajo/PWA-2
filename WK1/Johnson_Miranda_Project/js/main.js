@@ -100,7 +100,28 @@
             console.log(val.first_name);                             //print out value or first name
             $(".userid").html("Welcome User: " + val.first_name);    //concatenate username to welcome message
         })
-    })
+    });
+
+    /*
+     ====================== GET PROJECTS ====================
+     */
+    var projects = function(){
+        $ajax({
+          url: 'xhr/get_projects.php',
+            type: 'get'
+            dataType: 'json',
+            success: function(response){
+                if(response.error){
+                 console.log(response.error);
+                }else{
+            for(var i= 0, j=response.projects.length; i < j; i++){
+             var result = response.projects[i];
+            }
+
+            }
+
+        })
+    };
 
 
 	// 	============================================
