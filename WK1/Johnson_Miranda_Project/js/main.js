@@ -9,13 +9,13 @@
     /*
      ======================== TOOL TIP =====================
      */
-    $('.masterTooltip').hover(function(){
-        var title = $(this).attr('title');
-        $(this).data('tipText', title).removeAttr('title');
-        $('<p class="tooltip"></p>')
-            .text(title)
-            .appendTo('body')
-            .fadeIn('slow');
+    $('.masterTooltip').hover(function(){                                  //tool tip function with hover
+        var title = $(this).attr('title');                                 //variable title for this
+        $(this).data('tipText', title).removeAttr('title');                //
+        $('<p class="tooltip"></p>')                                       //tool tip class applied to p
+            .text(title)                                                   //applied to titles of doc
+            .appendTo('body')                                              //append to body of doc
+            .fadeIn('slow');                                               //fade tool tip in slow
     }, function() {
         $(this).attr('title', $(this).data('tipText'));
         $('.tooltip').remove();
