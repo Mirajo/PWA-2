@@ -11,7 +11,7 @@
      */
     $('.masterTooltip').hover(function(){                                  //tool tip function with hover
         var title = $(this).attr('title');                                 //variable title for this
-        $(this).data('tipText', title).removeAttr('title');                //
+        $(this).data('tipText', title).removeAttr('title');                //remove attribute from title
         $('<p class="tooltip"></p>')                                       //tool tip class applied to p
             .text(title)                                                   //applied to titles of doc
             .appendTo('body')                                              //append to body of doc
@@ -19,11 +19,11 @@
     }, function() {
         $(this).attr('title', $(this).data('tipText'));
         $('.tooltip').remove();
-    }).mousemove(function(e) {
-        var mousex = e.pageX + 20;
-        var mousey = e.pageY + 10;
-        $('.tooltip')
-        .css({ top: mousey, left: mousex })
+    }).mousemove(function(e) {                                             //functions for mouse
+        var mousex = e.pageX + 20;                                         //var for x coordinates of mouse
+        var mousey = e.pageY + 10;                                         //var for y coordinates of mouse
+        $('.tooltip')                                                      //
+        .css({ top: mousey, left: mousex })                                //x & y mouse coordinates for css
     });
 	/*
 	======================== APPLICATION FUNCTIONS =====================
@@ -47,12 +47,12 @@
     $('.modalClick').on('click', function(event){
         event.preventDefault();                                      //prevent default page use modal
          $('#overlay')                                               //call out the overlay
-             .fadeIn()                                               // Fade in the overlay
+             .fadeIn()                                               //Fade in the overlay
              .find('#modal')                                         //find the modal
              .fadeIn();                                              //fade in the modal
     });
 
-    $('.close').on('click', function(event){                        //close modal on click
+    $('.close').on('click', function(event){                         //close modal on click
         event.preventDefault();                                      //prevent default page use modal
         $('#overlay')                                                //call out overlay
             .fadeOut()                                               //Fade out overlay
