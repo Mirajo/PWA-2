@@ -94,11 +94,11 @@
     /*
      ====================== DISPLAY USERNAME ====================
      */
-    $.getJSON("xhr/check_login.php", function(data){
-        console.log(data);
-        $.each(data, function(key, va){
-            console.log(val.first_name);
-            $(".userid").html("Welcome User: " + val.first_name);
+    $.getJSON("xhr/check_login.php", function(data){                 //retrieve data from login page in xhr directory
+        console.log(data);                                           //print out the data
+        $.each(data, function(key, val){                             //
+            console.log(val.first_name);                             //print out value or first name
+            $(".userid").html("Welcome User: " + val.first_name);    //concatenate username to welcome message
         })
     })
 
