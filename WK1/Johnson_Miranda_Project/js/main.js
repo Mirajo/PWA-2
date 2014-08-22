@@ -105,10 +105,10 @@
     /*
      ====================== GET PROJECTS ====================
      */
-    var projects = function(){
-        $ajax({
-          url: 'xhr/get_projects.php',
-            type: 'get'
+    var projects = function(){                                        //create projects function
+        $ajax({                                                       //call ajax
+          url: 'xhr/get_projects.php',                                //retrieve from this url
+            type: 'get'                                               //
             dataType: 'json',
             success: function(response){
                 if(response.error){
