@@ -144,7 +144,7 @@ $(document).ready(function() {
                 $.each(data.results, function (i, rep) {
                     if ('senate' === rep.chamber.toLowerCase()) {
                         mySenators += '<p>';
-                        mySenators += '<a href="' + rep.contact_form + '" target="_blank">;
+                        mySenators += '<a href="' + rep.contact_form + '" target="_blank">';
                         mySenators += rep.first_name + ' ' + rep.last_name;
                         mySenators += '</a>';
                         mySenators += '</p>';
@@ -155,15 +155,11 @@ $(document).ready(function() {
 
                 $results.html(mySenators);
             }else{
-                $results.html('<p>')
+                $results.html('<p>No Senators found for zip code ' + zipCode + '. Please try again.</p>');
             }
-
-
-
-
         });
-    })
-})
+    });
+});
 </script>
 </body>
 </html>
