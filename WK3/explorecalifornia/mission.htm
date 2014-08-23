@@ -119,23 +119,31 @@
 <script>
 'use strict';
 
-$(document).ready(function () {
-	$('#rep-lookup').submit(function(e){
-		e.preventDefault();
+$(document).ready(function() {
+    $('#rep-lookup').submit(function(e) {
+        e.preventDefault();
 
         var $results = $('#rep-lookup-results'),
-            zipcode = $('#txt-zip').val(),
-            apiKey = '0f088c7409054f8c86318d8d969a5ca6';
-        
-        var requestURL = 'http://congress.api.sunlightfoundaton.com/legislators/locate?callback=?';
+                zipCode = $('#txt-zip').val(),
+                apiKey = '0f088c7409054f8c86318d8d969a5ca6';
+
+        var requestURL = 'http://congress.api.sunlightfoundation.com/legislators/locate?callback=?';
 
         //collect data
 
-        $results.html('Your Senators for ' + zipcode + ' are:');
 
-	});
+        $.getJSON(requestURL, {
+            'apikey': apiKey,
+            'zip': zipCode,
+        }, function (data) {
+            console.log(data);
+
+
+
+
+        });
+    })
 })
-
 </script>
 </body>
 </html>
