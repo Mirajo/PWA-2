@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>A little about us...</title>
-<link href="_css/main.css" rel="stylesheet" type="text/css" />
+<link href="explorecalifornia/_css/main.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 	#mainContent #rep-lookup {
 		font-family: georgia, serif;
@@ -73,13 +73,13 @@
   <div id="sidebar">
       <div id="specials" class="callOut">
         <h1>Monthly Specials</h1>
-        <h2 class="top"><img src="_images/calm_bug.gif" width="75" height="75" alt="California Calm" />California Calm</h2>
+        <h2 class="top"><img src="explorecalifornia/_images/calm_bug.gif" width="75" height="75" alt="California Calm" />California Calm</h2>
         <p>Day Spa Package <br />
-          <a href="tours/tour_detail_cycle.htm">$250</a>        </p>
-        <h2><img src="_images/desert_bug.gif" width="75" height="75" alt="From desert to sea" />From Desert to Sea</h2>
+          <a href="explorecalifornia/tours/tour_detail_cycle.htm">$250</a>        </p>
+        <h2><img src="explorecalifornia/_images/desert_bug.gif" width="75" height="75" alt="From desert to sea" />From Desert to Sea</h2>
         <p>2 Day Salton Sea <br />
           <a href="tours/tour_detail_cycle.htm">$350</a></p>
-        <h2><img src="_images/backpack_bug.gif" width="75" height="41" alt="Backpack Cali" />Backpack Cali</h2>
+        <h2><img src="explorecalifornia/_images/backpack_bug.gif" width="75" height="41" alt="Backpack Cali" />Backpack Cali</h2>
         <p>Big Sur Retreat <br />
           <a href="tours/tour_detail_cycle.htm">$620</a></p>
       </div>
@@ -89,7 +89,7 @@
 <div id="footerMenu">
   <h3>Quick Nav</h3>
     <ul id="quickNav">
-      <li><a href="tours.htm" title="Explore our tours">Tours</a></li>
+      <li><a href="explorecalifornia/tours.htm" title="Explore our tours">Tours</a></li>
       <li><a href="mission.htm" title="What we think">Mission</a></li>
       <li><a href="contact.htm" title="Contact and support">Contact</a></li>
       <li><a href="resources.htm" title="Guidance and planning">Resources</a></li>
@@ -115,50 +115,23 @@
 </div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="_scripts/jquery.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="explorecalifornia/jquery.min.js"><\/script>')</script>
 <script>
 'use strict';
 
 $(document).ready(function () {
 	$('#rep-lookup').submit(function(e){
 		e.preventDefault();
-		
-		var apiKey = '0f088c7409054f8c86318d8d969a5ca6',
-			zipCode = $('#txt-zip').val(),
-			$resultsArea = $('#rep-lookup-results');
-		
-		var requestURL = 'http://congress.api.sunlightfoundation.com/legislators/locate?callback=?';
 
-		$.getJSON(requestURL, {
-			'apikey' : apiKey,
-			'zip' : zipCode,
-		}, function(data){
-			console.log(data);
-			
-			if (data.results && data.results.length > 0) {
-			
-				var mySenators = '<p>Here are your Senators:</p>';
-			
-				$.each(data.results, function(i, rep) {
-					if ('senate' === rep.chamber.toLowerCase()) {
-						mySenators += '<p>';
-						mySenators += '<a href="' + rep.contact_form + '" target="_blank">';
-						mySenators += rep.first_name + ' ' + rep.last_name;
-						mySenators += '</a>';
-						mySenators += '</p>';
-					}
-				});
-			
-				mySenators += '<p>Please write to them in support of this legislation.</p>';
-			
-				$resultsArea.html(mySenators);
-			} else {
-				$resultsArea.html('<p>No senators found for zip code ' + zipCode + '. Please try again.</p>');
-			}
-		});
+        var $results = $('#rep-lookup-results'),
+            zipcoderesults = $('#txt-zip').val();
+
+        //collect data
+
+        $results.html('Your Senators for ' + zipecode + ' are:');
+
 	});
-});
-
+})
 
 </script>
 </body>
