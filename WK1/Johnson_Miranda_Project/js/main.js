@@ -105,24 +105,55 @@
     /*
      ====================== GET PROJECTS ====================
      */
-    var projects = function(){                                        //create projects function
-        $ajax({                                                       //call ajax
-          url: 'xhr/get_projects.php',                                //retrieve from this url
-            type: 'get'                                               //
-            dataType: 'json',
-            success: function(response){
-                if(response.error){
-                 console.log(response.error);
-                }else{
-            for(var i= 0, j=response.projects.length; i < j; i++){
-             var result = response.projects[i];
+    var projects = function(){                                                   //create variable for projects function
+        $ajax({                                                                  //call ajax
+          url: 'xhr/get_projects.php',                                           //retrieve from this url
+            type: 'get'                                                          //the type is get
+            dataType: 'json',                                                    //use datatype json
+            success: function(response){                                         //success function
+                if(response.error){                                              //if successful proceed
+                 console.log(response.error);                                    //print out error
+                }else{                                                           //if/else
+                for(var i=0, j=response.projects.length; i < j; i++){            //for loop for response of projects
+                var result = response.projects[i];                               //
+
+               $(".projects").append(                                            //append to projects selector
+                   '<div style="border: 1px solid black>' +                      //add a border to projects div
+                   "<input class='projectid' type='hidden' value='" + result.id + "'>" +  //hide input
+                   "Project Name: " + result.projectName + "<br>" +              //concatenate form input to project name
+                   "Project Description: " + result.projectDescription + "<br>"  //concatenate form input to project Description
+                   "Project Status: " + result.status + "<br>"                   //concatenate form input to project status
+                   + '<button class="deletebtn"> Delete</button>'                //add delte button to delete project
+                   +'<button class="editbtn">Edit</button>'                      //add edit button to edit project
+                   +'</div> <br>'                                                //
+
+                )
             }
 
-            }
-
-        })
-    };
-
+       $('deletebtn').on('click', function(e){                                   //
+        console.log('test delete');                                              //
+        $.ajax({                                                                 //
+           url: 'xhr/delete_project.php',                                        //
+           data: {                                                               //
+               projectID: result.id                                              //
+           },                                                                    //
+            type: 'POST',                                                        //
+            dataType: 'json',                                                    //
+            success: function(response){                                         //
+                console.log('Testing for success');                              //
+             if(response.error){                                                 //
+                 alert(response.error);                                          //
+             }else{                                                              //
+                 window.location.assign("projects.html");                        //
+             };
+           }
+        });
+      });
+    }
+  }
+})
+   }
+     projects();
 
 	// 	============================================
 	//	SETUP FOR INIT
