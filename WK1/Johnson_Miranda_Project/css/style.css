@@ -10,7 +10,6 @@ body{
 	background-position: center center;
 	background-color: #f1f2f4;
 	font-size: 14px;
-	padding:0;
 }
 	
 header {
@@ -41,6 +40,7 @@ nav ul li {
 	display: inline;
 	padding:0.5em;
 	text-decoration:none;
+
 	
 }
 #container {
