@@ -7,6 +7,11 @@
 (function($) {
 
     /*
+     ======================== DATE PICKER ====================
+     */
+    $(".mydatepicker").datepicker();
+
+    /*
      ======================== TOOL TIP =====================
      */
     $('.masterTooltip').hover(function(){                                  //tool tip function with hover
