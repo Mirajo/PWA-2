@@ -4,7 +4,7 @@
 	PWAII
 */
 
-(function($) {
+function ($) {
 
     /*
      ======================== DATE PICKER ====================
@@ -138,10 +138,11 @@
                         + '<button class="editbtn">Edit</button>'                      //add edit button to edit project
                         + '</div> <br>'                                                //
 
-                    })
+                    }
+                )
                 )
 
-                    $('deletebtn').on('click', function(e) {                                    //
+                    $('deletebtn').on('click', function (e) {                                    //
                         console.log('test delete');                                              //
                         $.ajax({                                                                 //
                             url: 'xhr/delete_project.php',                                        //
@@ -332,11 +333,6 @@
          */
 
 
-    })(jQuery);
-    )
-}
-// end private scope
+    };
 
-
-
-
+    })(jQuery)// end private scope
