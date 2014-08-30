@@ -44,7 +44,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-16.75" vertical-offset="2088" max-vertical-offset="2820">
               <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="175" selection-end-column="62" />
-              <folding />
+              <folding>
+                <marker date="1409364373000" expanded="true" signature="4367:4459" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,8 +77,8 @@
       <file leaf-file-name="dashboard.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.85655737" vertical-offset="873" max-vertical-offset="1605">
-              <caret line="100" column="2" selection-start-line="100" selection-start-column="2" selection-end-line="100" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.8770492" vertical-offset="903" max-vertical-offset="1635">
+              <caret line="103" column="7" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -636,14 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../WK3/wk3_activity.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="690">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Applications/MAMP/htdocs/FSU/Johnson_Miranda_Project_wk3/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.77459013" vertical-offset="903" max-vertical-offset="1635">
@@ -733,14 +727,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.75" vertical-offset="2088" max-vertical-offset="2820">
           <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="175" selection-end-column="62" />
+          <folding>
+            <marker date="1409364373000" expanded="true" signature="4367:4459" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../WK3/wk3_activity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="690">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85655737" vertical-offset="873" max-vertical-offset="1605">
-          <caret line="100" column="2" selection-start-line="100" selection-start-column="2" selection-end-line="100" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.8770492" vertical-offset="903" max-vertical-offset="1635">
+          <caret line="103" column="7" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
           <folding />
         </state>
       </provider>
