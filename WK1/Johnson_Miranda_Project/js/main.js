@@ -168,7 +168,7 @@
     /*
      ====================== NEW PROJECTS ====================
      */
-    $('#addButton').on('click', function () {
+    $('#addButton').on('click', function(){
         var projName = $('#projectName').val(),
             projDesc = $('#projectDescription').val(),
             projDue = $('#projectDueDate').val(),
@@ -226,7 +226,7 @@
         $(
             '#logout').click(function(e){
                 e.preventDefault;
-                $.get('xhr/logout.php', function() {
+                $.get('xhr/logout.php', function(){
                     window.location.assign('index.html')
                 })
 
@@ -266,12 +266,21 @@
                 });
             });
         /*
+         ====================== CALL TO ACTION BUTTON ====================
+         */
+
+        $('.userbtn').on('click', function(e){
+            e.preventDefault();
+            window.location.assign('register.html');
+            )};
+
+        /*
          ====================== REGISTRATION BUTTON ====================
          */
 
         $('.regBtn').on('click', function(e){
             e.preventDefault();
-            window.location.assign('registration.html');
+            window.location.assign('register.html');
         });
 
         /*
@@ -293,34 +302,43 @@
             )};
 
         /*
+         ====================== TASK BUTTON ====================
+         */
+
+        $('.taskBtn').on('click', function(e){
+            e.preventDefault();
+            window.location.assign('task.html');
+        });
+
+        /*
          ====================== INDEX TO SIGN UP PAGE ====================
          */
-        $(
-            '#signupbtn').on('click', function (e) {
+
+        $('#signupbtn').on('click', function(e){
                 e.preventDefault();
                 window.location.assign('projects.html');
             });
         /*
          ====================== DASHBOARD BUTTON TO DASHBOARD ====================
          */
-        $(
-            '.dashboard').on('click', function (e) {
+
+        $('.dashboard').on('click', function(e){
                 e.preventDefault();
                 window.location.assign('dashboard.html');
             });
         /*
          ====================== GO TO PROFILE PAGE ====================
          */
-        $(
-            '#profilebtn').on('click', function (e) {
+
+        $('#profilebtn').on('click', function(e){
                 e.preventDefault();
                 window.location.assign('profile.html');
             });
         /*
          ====================== ADD PROJECTS PAGE ====================
          */
-        $(
-            '.addbtn').on('click', function (e) {
+
+        $('.addbtn').on('click', function(e){
                 e.preventDefault();
                 window.location.assign('add.html');
             });
@@ -328,11 +346,9 @@
          ====================== DISPLAY USERNAME ====================
          */
 
-        $.
-
-            getJSON("xhr/check_login.php", function (data) {
+        $.getJSON("xhr/check_login.php", function(data){
                 console.log(data);
-                $.each(data, function (key, val) {
+                $.each(data, function(key, val){
                     console.log(val.first_name);
                     $(".userid").html("Welcome User: " + val.first_name);
                 })
