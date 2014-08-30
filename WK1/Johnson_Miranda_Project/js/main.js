@@ -4,7 +4,7 @@
 	PWAII
 */
 
-(function ($) {
+(function($) {
 
     /*
      ======================== DATE PICKER ====================
@@ -16,7 +16,7 @@
      ======================== TOOL TIP =====================
      */
 
-    $('.masterTooltip').hover(function () {                                  //tool tip function with hover
+    $('.masterTooltip').hover(function() {                                  //tool tip function with hover
         var title = $(this).attr('title');                                 //variable title for this
         $(this).data('tipText', title).removeAttr('title');                //remove attribute from title
         $('<p class="tooltip"></p>')                                       //tool tip class applied to p
@@ -37,11 +37,8 @@
      ======================== APPLICATION FUNCTIONS =====================
      */
 
-    var
-
-        checkLoginState = function () {
-            $.
-                ajax({
+    var checkLoginState = function() {
+            $.ajax({
                     url: 'xhr/check_login.php',
                     type: 'get',
                     dataType: 'json',
@@ -56,7 +53,7 @@
      ========================= MODAL ========================
      */
 
-    $('.modalClick').on('click', function (event) {
+    $('.modalClick').on('click', function(event) {
         event.preventDefault();                                      //prevent default page use modal
         $('#overlay')                                               //call out the overlay
             .fadeIn()                                               //Fade in the overlay
@@ -64,7 +61,7 @@
             .fadeIn();                                              //fade in the modal
     });
 
-    $('.close').on('click', function (event) {                        //close modal on click
+    $('.close').on('click', function(event) {                        //close modal on click
         event.preventDefault();                                      //prevent default page use modal
         $('#overlay')                                                //call out overlay
             .fadeOut()                                               //Fade out overlay
@@ -76,11 +73,11 @@
     /*
      ====================== FADING STATUS OPTION =======================
      */
-    $('.status').mouseover(function () {                                //move over status icons
+    $('.status').mouseover(function() {                                //move over status icons
         $(this).fadeTo(100, .3);                                       //fade icons during mouse over
     });
 
-    $('.status').mouseout(function () {                                 //mouse over status icons
+    $('.status').mouseout(function() {                                 //mouse over status icons
         $(this).fadeTo(100, 1);                                        //fade icons during mouse over
     });
 
@@ -91,7 +88,7 @@
     $('#tabs p:not(:first)').hide();                                 //first tab is visible the others are hidden
 
 
-    $('#tabs-nav li').click(function (e) {                            //call div tabs nav
+    $('#tabs-nav li').click(function(e) {                            //call div tabs nav
         e.preventDefault();                                          //prevent the default behavior
         $('#tabs p').hide();                                         //hide the p in the tabs div
 
@@ -106,9 +103,9 @@
     /*
      ====================== DISPLAY USERNAME ====================
      */
-    $.getJSON("xhr/check_login.php", function (data) {                 //retrieve data from login page in xhr directory
+    $.getJSON("xhr/check_login.php", function(data){                 //retrieve data from login page in xhr directory
         console.log(data);                                           //print out the data
-        $.each(data, function (key, val) {                             //
+        $.each(data, function(key, val){                             //
             console.log(val.first_name);                             //print out value or first name
             $(".userid").html("Welcome User: " + val.first_name);    //concatenate username to welcome message
         })
@@ -117,20 +114,20 @@
     /*
      ====================== GET PROJECTS ====================
      */
-    var projects = function () {                                                   //create variable for projects function
-        $ajax({                                                                  //call ajax
-            url: 'xhr/get_projects.php',                                           //retrieve from this url
-            type: 'get'                                                          //the type is get
-            dataType: 'json',                                                   //use datatype json
-            success: function (response) {                                         //success function
-                if (response.error) {                                              //if successful proceed
+    var projects = function(){                                                      //create variable for projects function
+        $.ajax({                                                                    //call ajax
+            url: 'xhr/get_projects.php',                                            //retrieve from this url
+            type: 'get',                                                            //the type is get
+            dataType: 'json',                                                       //use datatype json
+            success: function(response){                                            //success function
+                if (response.error){                                                //if successful proceed
                     console.log(response.error);                                    //print out error
-                } else {                                                           //if/else
-                    for (var i = 0, j = response.projects.length; i < j; i++) {            //for loop for response of projects
-                        var result = response.projects[i];                               //
+                }else{                                                              //if/else
+                    for(var i=0, j=response.projects.length; i < j; i++) {        //for loop for response of projects
+                        var result = response.projects[i];                           //
 
                         $(".projects").append(                                            //append to projects selector
-                                '<div style="border: 1px solid black>' +                      //add a border to projects div
+                                '<div style="border: 1px solid black>' +                                  //add a border to projects div
                                 "<input class='projectid' type='hidden' value='" + result.id + "'>" +  //hide input
                                 "Project Name: " + result.projectName + "<br>" +              //concatenate form input to project name
                                 "Project Description: " + result.projectDescription + "<br>"  //concatenate form input to project Description
@@ -139,24 +136,25 @@
                         + '<button class="editbtn">Edit</button>'                      //add edit button to edit project
                         + '</div> <br>'                                                //
 
-                    })
-                )
+                    )
 
-                    $('deletebtn').on('click', function (e) {                                    //
-                        console.log('test delete');                                              //
-                        $.ajax({                                                                 //
-                            url: 'xhr/delete_project.php',                                        //
-                            data: {                                                               //
-                                projectID: result.id                                              //
+                    }
+
+                    $('.deletebtn').on('click', function(e){                                    //function for delete button
+                        console.log('test delete');                                              //print to test delete butto
+                        $.ajax({                                                                 //call ajax
+                            url: 'xhr/delete_project.php',                                        //access delete project file in xhr dir
+                            data: {                                                               //access data
+                                projectID: result.id                                              //select project by id
                             },                                                                    //
-                            type: 'POST',                                                        //
-                            dataType: 'json',                                                    //
-                            success: function (response) {                                       //
-                                console.log('Testing for success');                              //
-                                if (response.error) {                                             //
-                                    alert(response.error);                                          //
-                                } else {                                                              //
-                                    window.location.assign("projects.html");                        //
+                            type: "POST",                                                        //use post method
+                            dataType: "json",                                                    //Json datatype
+                            success: function(response){                                       //success function
+                                console.log('Testing for success');                              //print to console log to test
+                                if (response.error){                                             //if else state for errors
+                                    alert(response.error);                                          //print alert for error response
+                                }else{                                                              //else statement
+                                    window.location.assign("projects.html");                        //assign to the projects page
                                 }
                             }
                         });
@@ -195,15 +193,14 @@
          ====================== LOGIN ====================
          */
 
-        $(
-            'signinButton').click(function () {
-                var user = $('#user').val();
-                var pass = $('#pass').val();
+        $('#signinButton').click(function(){
+                var user = $("#username").val();
+                var pass = $("#password").val();
                 console.log("The password is working");
                 $.ajax({
-                    url: 'xhr/login.php',
-                    type: 'post',
-                    dataType: 'json',
+                    url: "xhr/login.php",
+                    type: "post",
+                    dataType: "json",
                     data: {
                         username: user,
                         password: pass
@@ -214,10 +211,9 @@
                         if (response.error) {
                             alert(response.error);
                         } else {
-                            window.location.assign('admin.html')
+                            window.location.assign("admin.html")
 
-                        }
-                        ;
+                        };
 
                     }
 
@@ -226,24 +222,25 @@
         /*
          ====================== LOGOUT ====================
          */
+
         $(
-            '#logout').click(function (e) {
+            '#logout').click(function(e){
                 e.preventDefault;
-                $.get('xhr/logout.php', function () {
+                $.get('xhr/logout.php', function() {
                     window.location.assign('index.html')
                 })
 
             });
+
         /*
          ====================== REGISTRATION PAGE ====================
          */
-        $(
-            '#register').on('click', function () {
+        $('#register').on('click', function(){
                 var firstname = $('#first').val(),
                     lastname = $('#last').val(),
                     username = $('#userName').val(),
                     email = $('#email').val(),
-                    password = $('password').val();
+                    password = $('#password').val();
                 console.log(firstname + ' ' + lastname + ' ' + username + ' ' + email + ' ' + password);
 
                 $.ajax({
@@ -257,8 +254,8 @@
                         email: email,
                         password: password
                     },
-                    success: function (response) {
-                        if (response.error) {
+                    success: function(response) {
+                        if (response.error){
                             alert(response.error);
                         } else {
                             window.location.assign('index.html');
@@ -272,7 +269,7 @@
          ====================== REGISTRATION BUTTON ====================
          */
 
-        $('.regBtn').on('click,'function(e){
+        $('.regBtn').on('click', function(e){
             e.preventDefault();
             window.location.assign('registration.html');
         });
@@ -281,8 +278,19 @@
          ====================== PROJECT BUTTON ====================
          */
 
-        $(
+        $('.probtn').on('click', function(e){
+            e.preventDefault();
+            window.location.assign('projects.html');
+         )};
 
+        /*
+         ====================== USER BUTTON ====================
+         */
+
+        $('.userbtn').on('click', function(e){
+            e.preventDefault();
+            window.location.assign('admin.html');
+            )};
 
         /*
          ====================== INDEX TO SIGN UP PAGE ====================
