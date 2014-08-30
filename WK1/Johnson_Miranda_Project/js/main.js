@@ -277,6 +277,11 @@
             window.location.assign('registration.html');
         });
 
+        /*
+         ====================== PROJECT BUTTON ====================
+         */
+
+        $(
 
 
         /*
