@@ -4,7 +4,7 @@
 	PWAII
 */
 
-function ($) {
+(function ($) {
 
     /*
      ======================== DATE PICKER ====================
@@ -30,8 +30,9 @@ function ($) {
         var mousex = e.pageX + 20;                                         //var for x coordinates of mouse
         var mousey = e.pageY + 10;                                         //var for y coordinates of mouse
         $('.tooltip')                                                      //
-            .css({ top: mousey, left: mousex })                                //x & y mouse coordinates for css
+            .css({ top: mousey, left: mousex })                              //x & y mouse coordinates for css
     });
+
     /*
      ======================== APPLICATION FUNCTIONS =====================
      */
@@ -63,7 +64,7 @@ function ($) {
             .fadeIn();                                              //fade in the modal
     });
 
-    $('.close').on('click', function (event) {                         //close modal on click
+    $('.close').on('click', function (event) {                        //close modal on click
         event.preventDefault();                                      //prevent default page use modal
         $('#overlay')                                                //call out overlay
             .fadeOut()                                               //Fade out overlay
@@ -138,8 +139,7 @@ function ($) {
                         + '<button class="editbtn">Edit</button>'                      //add edit button to edit project
                         + '</div> <br>'                                                //
 
-                    }
-                )
+                    })
                 )
 
                     $('deletebtn').on('click', function (e) {                                    //
@@ -194,6 +194,7 @@ function ($) {
         /*
          ====================== LOGIN ====================
          */
+
         $(
             'signinButton').click(function () {
                 var user = $('#user').val();
@@ -267,6 +268,17 @@ function ($) {
 
                 });
             });
+        /*
+         ====================== REGISTRATION BUTTON ====================
+         */
+
+        $('.regBtn').on('click,'function(e){
+            e.preventDefault();
+            window.location.assign('registration.html');
+        });
+
+
+
         /*
          ====================== INDEX TO SIGN UP PAGE ====================
          */

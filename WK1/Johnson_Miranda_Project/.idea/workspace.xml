@@ -52,11 +52,23 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8214286" vertical-offset="4389" max-vertical-offset="5145">
-              <caret line="334" column="0" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.48412699" vertical-offset="3789" max-vertical-offset="5325">
+              <caret line="277" column="11" selection-start-line="277" selection-start-column="11" selection-end-line="277" selection-end-column="11" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <marker date="1409365793000" expanded="true" signature="6791:6815" placeholder="..." />
+                <marker date="1409367527000" expanded="false" signature="6790:6814" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///Applications/MAMP/htdocs/FSU/Johnson_Miranda_Project_wk3/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3279" max-vertical-offset="5205">
+              <caret line="260" column="3" selection-start-line="260" selection-start-column="3" selection-end-line="267" selection-end-column="7" />
+              <folding>
+                <marker date="1409367527000" expanded="true" signature="6402:6426" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -115,6 +127,7 @@
         <option value="/Applications/MAMP/htdocs/FSU/Johnson_Miranda_Project_wk3/login.html" />
         <option value="/Applications/MAMP/htdocs/FSU/Johnson_Miranda_Project_wk3/dashboard.html" />
         <option value="/Applications/MAMP/htdocs/FSU/Johnson_Miranda_Project_wk3/index.html" />
+        <option value="/Applications/MAMP/htdocs/FSU/Johnson_Miranda_Project_wk3/js/main.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
@@ -285,7 +298,7 @@
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="/Applications/MAMP/htdocs/FSU/Johnson_Miranda_Project_wk3/js/main.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js/main.js" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -714,21 +727,21 @@
     </entry>
     <entry file="file:///Applications/MAMP/htdocs/FSU/Johnson_Miranda_Project_wk3/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5070">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3684" max-vertical-offset="5205">
+          <caret line="260" column="3" selection-start-line="260" selection-start-column="3" selection-end-line="267" selection-end-column="7" />
           <folding>
-            <marker date="1408849384000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1409367527000" expanded="true" signature="6402:6426" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8214286" vertical-offset="4389" max-vertical-offset="5145">
-          <caret line="334" column="0" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.48412699" vertical-offset="3789" max-vertical-offset="5325">
+          <caret line="277" column="11" selection-start-line="277" selection-start-column="11" selection-end-line="277" selection-end-column="11" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1409365793000" expanded="true" signature="6791:6815" placeholder="..." />
+            <marker date="1409367527000" expanded="false" signature="6790:6814" placeholder="..." />
           </folding>
         </state>
       </provider>
