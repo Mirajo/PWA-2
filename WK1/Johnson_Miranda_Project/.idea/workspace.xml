@@ -44,21 +44,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-16.75" vertical-offset="2088" max-vertical-offset="2820">
               <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="175" selection-end-column="62" />
-              <folding>
-                <marker date="1409364373000" expanded="true" signature="4367:4459" placeholder="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/main.js">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///Applications/MAMP/htdocs/FSU/Johnson_Miranda_Project_wk3/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.11904762" vertical-offset="4245" max-vertical-offset="5715">
-              <caret line="277" column="27" selection-start-line="277" selection-start-column="27" selection-end-line="277" selection-end-column="27" />
+            <state vertical-scroll-proportion="25.846153" vertical-offset="4137" max-vertical-offset="5790">
+              <caret line="231" column="35" selection-start-line="231" selection-start-column="35" selection-end-line="231" selection-end-column="35" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <marker date="1409382196000" expanded="true" signature="6754:6778" placeholder="..." />
+                <marker date="1409388992000" expanded="true" signature="6681:6704" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -74,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="dashboard.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.125" vertical-offset="903" max-vertical-offset="1635">
-              <caret line="86" column="7" selection-start-line="86" selection-start-column="7" selection-end-line="96" selection-end-column="77" />
+            <state vertical-scroll-proportion="0.65163934" vertical-offset="903" max-vertical-offset="1635">
+              <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -124,12 +122,12 @@
         <option value="/Applications/MAMP/htdocs/FSU/Johnson_Miranda_Project_wk3/login.html" />
         <option value="/Applications/MAMP/htdocs/FSU/Johnson_Miranda_Project_wk3/dashboard.html" />
         <option value="/Applications/MAMP/htdocs/FSU/Johnson_Miranda_Project_wk3/index.html" />
-        <option value="/Applications/MAMP/htdocs/FSU/Johnson_Miranda_Project_wk3/js/main.js" />
         <option value="/Applications/MAMP/htdocs/FSU/Johnson_Miranda_Project_wk3/css/style.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/dashboard.html" />
         <option value="$PROJECT_DIR$/register.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="/Applications/MAMP/htdocs/FSU/Johnson_Miranda_Project_wk3/js/main.js" />
+        <option value="$PROJECT_DIR$/dashboard.html" />
       </list>
     </option>
   </component>
@@ -299,7 +297,7 @@
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/register.html" />
+    <property name="last_opened_file_path" value="/Applications/MAMP/htdocs/FSU/Johnson_Miranda_Project_wk3/js/main.js" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -686,31 +684,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/MAMP/htdocs/FSU/Johnson_Miranda_Project_wk3/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3684" max-vertical-offset="5205">
-          <caret line="260" column="3" selection-start-line="260" selection-start-column="3" selection-end-line="267" selection-end-column="7" />
-          <folding>
-            <marker date="1409367527000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Applications/MAMP/htdocs/FSU/Johnson_Miranda_Project_wk3/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="2160">
           <caret line="91" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="138" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.75" vertical-offset="2088" max-vertical-offset="2820">
-          <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="175" selection-end-column="62" />
-          <folding>
-            <marker date="1409364373000" expanded="true" signature="4367:4459" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -730,22 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../WK3/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.125" vertical-offset="903" max-vertical-offset="1635">
-          <caret line="86" column="7" selection-start-line="86" selection-start-column="7" selection-end-line="96" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-29.25" vertical-offset="798" max-vertical-offset="1665">
@@ -756,12 +718,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.11904762" vertical-offset="4245" max-vertical-offset="5715">
-          <caret line="277" column="27" selection-start-line="277" selection-start-column="27" selection-end-line="277" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.21825397" vertical-offset="4245" max-vertical-offset="5715">
+          <caret line="294" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="375" selection-end-column="34" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1409382196000" expanded="true" signature="6754:6778" placeholder="..." />
+            <marker date="1409382196000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.75" vertical-offset="2088" max-vertical-offset="2820">
+          <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="175" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/MAMP/htdocs/FSU/Johnson_Miranda_Project_wk3/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="25.846153" vertical-offset="4137" max-vertical-offset="5790">
+          <caret line="231" column="35" selection-start-line="231" selection-start-column="35" selection-end-line="231" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1409388992000" expanded="true" signature="6681:6704" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../WK3/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65163934" vertical-offset="903" max-vertical-offset="1635">
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
